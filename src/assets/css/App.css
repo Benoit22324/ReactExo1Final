@@ -1,0 +1,18 @@
+.characterTabList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(138, 90, 0);
+}
+.characterTabBox {
+    width: 10%;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(170, 170, 170);
+    font-weight: bold;
+    text-align: center;
+}
+.characterTabBox:hover {
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+}
