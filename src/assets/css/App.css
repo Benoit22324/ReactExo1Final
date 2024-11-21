@@ -1,16 +1,26 @@
 /* Global */
 body {
     margin: 0;
+    height: 100%;
     box-sizing: border-box;
+}
+.bodyDarkMode {
+    background-color: rgb(26, 26, 26);
 }
 h2 {
     margin: 0.5rem 0;
     font-size: 1.5rem;
 }
-.mainBody {
+.mainBody,
+.mainBodyDarkMode {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+}
+.mainBodyDarkMode {
+    background-color: rgb(26, 26, 26);
+    color: rgb(247, 247, 247);
 }
 .errorMessage {
     color: rgb(180, 0, 0);
@@ -19,24 +29,50 @@ h2 {
 
 /* Components */
 /* Navbar */
-.navbar {
+.navbar,
+.navbarDarkMode {
     width: 100%;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgb(31, 31, 31);
     background-color: rgb(228, 228, 228);
 }
-.navLink {
+.navbarDarkMode {
+    background-color: rgb(51, 51, 51);
+}
+.navLink,
+.navLinkDarkMode {
     margin: 0.2rem;
     padding: 0.5rem;
     color: rgb(31, 31, 31);
     text-decoration: none;
     font-size: 1.5rem;
 }
+.navLinkDarkMode {
+    color: rgb(247, 247, 247);
+}
 .navLink:hover {
     border-right: 1px solid rgb(31, 31, 31);
     border-left: 1px solid rgb(31, 31, 31);
 }
+.navLinkDarkMode:hover {
+    border-right: 1px solid rgb(247, 247, 247);
+    border-left: 1px solid rgb(247, 247, 247);
+}
+/* ThemeSwitcher */
+.themeSwitcher,
+.themeSwitcherDarkMode {
+    border-radius: 10px;
+}
+.themeSwitcher:hover,
+.themeSwitcherDarkMode:hover {
+    cursor: pointer;
+}
+.themeSwitcherDarkMode {
+    background-color: rgb(26, 26, 26);
+    color: rgb(247, 247, 247);
+}
+
 /* CharacterTab */
 .characterTabBox {
     width: 10%;
@@ -70,10 +106,12 @@ h2 {
     cursor: pointer;
 }
 /* CharacterDisplay */
-.characterInfoContainer {
+.characterInfoContainer,
+.characterInfoContainerDarkMode {
     display: flex;
     width: 95%;
     gap: 0.3rem;
+    color: rgb(31, 31, 31);
 }
 .characterMainPassiveInfo {
     display: flex;
@@ -82,18 +120,22 @@ h2 {
     gap: 0.3rem;
 }
 .characterMainInfo,
-.characterPassiveInfo {
+.characterPassiveInfo,
+.characterMainInfoDarkMode,
+.characterPassiveInfoDarkMode {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background-color: rgb(228, 228, 228);
     border-radius: 5px;
 }
-.characterMainInfo p {
+.characterMainInfo p,
+.characterMainInfoDarkMode p {
     margin: 0.3rem 0;
     font-size: 1.1rem;
 }
-.characterSkillsInfo {
+.characterSkillsInfo,
+.characterSkillsInfoDarkMode {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -104,13 +146,24 @@ h2 {
 .characterConstellationsSection {
     width: 40%;
 }
-.characterConstellationsInfo {
+.characterConstellationsInfo,
+.characterConstellationsInfoDarkMode {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background-color: rgb(228, 228, 228);
     border-radius: 5px;
 }
+.characterInfoContainerDarkMode {
+    color: rgb(247, 247, 247);
+}
+.characterMainInfoDarkMode,
+.characterPassiveInfoDarkMode,
+.characterSkillsInfoDarkMode,
+.characterConstellationsInfoDarkMode {
+    background-color: rgb(51, 51, 51);
+}
+
 
 /* Pages */
 /* Characters Page */
