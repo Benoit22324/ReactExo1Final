@@ -18,10 +18,10 @@ function App() {
 
           <div className='mainBody'>
             <Routes>
-              <Route path='/reactexo1final/' Component={Home} />
-              <Route path='/reactexo1final/characters' Component={Characters} />
-              <Route path='/reactexo1final/character/:name' Component={Character} />
-              <Route path='/reactexo1final/credit' Component={Credit} />
+              <Route path='/ReactExo1Final/' Component={Home} />
+              <Route path='/ReactExo1Final/characters' Component={Characters} />
+              <Route path='/ReactExo1Final/character/:name' Component={Character} />
+              <Route path='/ReactExo1Final/credit' Component={Credit} />
             </Routes>
           </div>
         </BrowserRouter>

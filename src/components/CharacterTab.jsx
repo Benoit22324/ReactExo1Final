@@ -3,7 +3,7 @@ import { cleanName } from "../utils/cleanName";
 
 export const CharacterTab = ({name}) => {
     return <>
-        <Link className="characterTabBox" to={`/reactexo1final/character/${name}`}>
+        <Link className="characterTabBox" to={`/ReactExo1Final/character/${name}`}>
             <p>{cleanName(name)}</p>
         </Link>
     </>

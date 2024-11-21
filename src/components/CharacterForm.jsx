@@ -29,7 +29,7 @@ export const CharacterForm = () => {
         const existInDataBase = charactersList.find(character => character === revertName);
 
         if (selectedCharacter.trim() !== "" && existInDataBase) {
-            navigate(`/reactexo1final/character/${revertName}`);
+            navigate(`/ReactExo1Final/character/${revertName}`);
         }
         else if (selectedCharacter.trim() === "" && !existInDataBase) {
             setError("Veuillez saisir le nom d'un personnage");
