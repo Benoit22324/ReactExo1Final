@@ -12,6 +12,10 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+.errorMessage {
+    color: rgb(180, 0, 0);
+    font-weight: bold;
+}
 
 /* Components */
 /* Navbar */
@@ -114,4 +118,14 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+/* Credit Page */
+.cheerButton {
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: rgb(2, 173, 252);
+}
+.cheerButton:hover {
+    cursor: pointer;
+    background-color: rgb(55, 192, 255);
 }
