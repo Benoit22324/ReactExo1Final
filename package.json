@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Benoit22324/ReactExo1Final",
+  "homepage": "https://benoit22324.github.io/ReactExo1Final/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
