@@ -6,7 +6,7 @@ export const DisplaySkill = ({skill}) => {
             <div>
                 <h4>{skill.unlock} Info</h4>
                 {skill.upgrades.map(atkDesc => 
-                    <p>{atkDesc.name} | {atkDesc.value}</p>
+                    <p key={atkDesc.name}>{atkDesc.name} | {atkDesc.value}</p>
                 )}
             </div>
         </div>

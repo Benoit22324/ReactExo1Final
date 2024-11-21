@@ -24,7 +24,6 @@ const CharacterReducer = createSlice({
         loading: false,
         selectedCharacter: "",
         choosenCharacter: {},
-        rarity: 0,
     },
     reducers: {
         setSelectedCharacter(state, action) {
