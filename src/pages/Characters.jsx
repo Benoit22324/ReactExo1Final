@@ -3,7 +3,7 @@ import { CharactersTab } from "../components/CharactersTab"
 
 export const Characters = () => {
     return <>
-        <h1>Character Page</h1>
+        <h1>Genshin Character</h1>
         <CharacterForm />
         <CharactersTab />
     </>

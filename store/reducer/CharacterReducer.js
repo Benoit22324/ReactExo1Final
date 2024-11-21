@@ -23,6 +23,7 @@ const CharacterReducer = createSlice({
         charactersList: [],
         loading: false,
         selectedCharacter: "",
+        choosenCharacter: {},
         rarity: 0,
     },
     reducers: {
@@ -32,10 +33,17 @@ const CharacterReducer = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(fetchCharacters.pending, (state, action) => {
-            state.loading = true
+            state.loading = true;
         })
         builder.addCase(fetchCharacters.fulfilled, (state, action) => {
             state.charactersList = action.payload;
+            state.loading = false;
+        })
+        builder.addCase(fetchCharacter.pending, (state, action) => {
+            state.loading = true;
+        })
+        builder.addCase(fetchCharacter.fulfilled, (state, action) => {
+            state.choosenCharacter = action.payload;
             state.loading = false;
         })
     }

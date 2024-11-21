@@ -1,17 +1,22 @@
 import { useParams } from "react-router-dom"
-import { cleanName } from "../utils/cleanName";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectLoading } from "../../store/selector/character";
+import { fetchCharacter } from "../../store/reducer/CharacterReducer";
+import { CharacterDisplay } from "../components/CharacterDisplay";
 
 export const Character = () => {
     const { name } = useParams();
-    const [displayName, setDisplayName] = useState("");
+    const dispatch = useDispatch();
+    const loading = useSelector(selectLoading);
 
     useEffect(() => {
-        setDisplayName(cleanName(name));
+        dispatch(fetchCharacter(name));
     }, [])
-    
 
     return <>
-        <h1>{displayName}</h1>
+        { loading ? <p>Fetching Character Data...</p>
+            : <CharacterDisplay />
+        }
     </>
 }

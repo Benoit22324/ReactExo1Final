@@ -31,9 +31,10 @@ export const CharacterForm = () => {
     }
 
     return <>
-        <form onSubmit={(e) => handleSubmit(e)}>
-            <input type="text" value={selectedCharacter} onChange={(e) => handleValue(e)} />
-            <button>Search</button>
+        <h2>Quick Search</h2>
+        <form className="characterForm" onSubmit={(e) => handleSubmit(e)}>
+            <input className="characterInput" type="text" value={selectedCharacter} onChange={(e) => handleValue(e)} />
+            <button className="characterSubmit">Search</button>
         </form>
     </>
 }

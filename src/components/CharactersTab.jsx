@@ -14,6 +14,7 @@ export const CharactersTab = () => {
     }, [])
 
     return <>
+        <h2>Characters List</h2>
         {
             loading ? <p>Fetching characters...</p>
             : <div className="characterTabList">
